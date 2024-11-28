@@ -1,0 +1,83 @@
+/* Réutilisation des styles de Login.css */
+.login_div {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_div form {
+    width: 40vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.login_div form h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.login_div form input {
+    width: 80%;
+    height: 3rem;
+    margin: 0.8rem 0;
+    padding: 0 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.login_div form input::placeholder {
+    color: rgba(88, 88, 88, 0.5);
+}
+
+.login_div form button {
+    width: 85%;
+    height: 3rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login_div form button:hover {
+    background-color: #444;
+}
+
+/* Lien pour rediriger vers une autre page */
+.login_div form p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.login_div form p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.login_div form p a:hover {
+    color: #0056b3;
+}
